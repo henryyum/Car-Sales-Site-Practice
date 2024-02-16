@@ -1,0 +1,115 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="left">
+                    <h1 class="title-h1">Available Cars</h1>
+                    <h2>There are 15 cars that match your criteria</h2>
+                </div>
+    
+                <div class="right">
+                    <div class="icons">
+                        <input type="text" class="searchbar">
+                    <img class="menu-img" src="./assets/menu.svg" alt="">
+                    </div>
+                
+
+                <div class="popup-menu">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="newCars" id="newCars">
+                        <label for="newCars">New cars</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="usedCars" id="usedCars">
+                        <label for="usedCars">Used cars</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="dealerShip" id="dealerShip">
+                        <label for="dealerShip">Dealership</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="forSale" id="forSale">
+                        <label for="forSale">For sale by owner</label>
+                    </div>
+                </div>
+
+                </div>
+            </header>
+
+            <main>
+                <div class="main-header">
+                    <p>Car Details</p>
+                    <p>Location</p>
+                    <p>Price</p>
+                    <p>Action</p>
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2017 Toyota Highlander V4</a>
+                    <h2>1944 Scrimba Ln <br> Youngstown, OH 444481</h2>
+                        <div class="cta">
+                            <h3>$17,400</h3>
+                            <img class="save-img" src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                            
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2012 Toyota Tundra 4x4</a>
+                    <h2>301 Fantasy Dr<br>Beverly Hills, CA 90210</h2>
+                        <div class="cta">
+                            <h3>$23,900</h3>
+                            <img class="save-img" src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2004 Dodge Ram 4x4</a>
+                    <h2>9104 Falsety Ave<br>AnonyVille, FL 40440</h2>
+                        <div class="cta">
+                            <h3>$7,998</h3>
+                            <img onclick="toggleImg(this)" class="save-img" src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2021 Tesla Model 3</a>
+                    <h2>993 Fiscal St<br> Boulder, CO 93391</h2>
+                        <div class="cta">
+                            <h3>$37,490</h3>
+                            <img class="save-img" src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2017 Toyota Highlander V4</a>
+                    <h2>1944 Scrimba Ln<br>Youngstown, OH 44481</h2>
+                        <div class="cta">
+                            <h3>$17,400</h3>
+                            <img class="save-img" src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                
+                </div>
+
+                <div class="car-info">
+                    <a href="#">2012 Toyota Tundra 4x4</a>
+                    <h2>301 Fantasy Dr<br>Beverly Hills, CA 90210</h2>
+                        <div class="cta">
+                            <h3>$23,900</h3>
+                            <img src="./assets/save.svg" alt="heart emoji representing a save button">
+                        </div>
+                </div>
+            </main>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

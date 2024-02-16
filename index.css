@@ -1,0 +1,158 @@
+html, body, h1, h2, h3, a {
+    margin: 0;
+    padding: 0;
+}
+
+.title-h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 22.5px;
+    color: #686868;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #F4F4F4;
+}
+
+.searchbar {
+    border: none;
+    padding: 6px 18px;
+    border-radius: 50px;
+    background: url('./assets/search.svg') no-repeat white right 8px center;
+    width: 100%;
+}
+
+.searchbar:focus {
+    outline: thin;
+}
+
+.container {
+    padding: 2.5rem 2.8125rem;
+}
+
+.menu-img {
+    width: 26px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.left {
+    text-align: center;
+}
+.left h2 {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: #008AD8;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.car-info {
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.car-info:hover {
+    background-color: white;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.save-img {
+    width: 28px;
+}
+
+.main-header {
+    display: none;
+}
+
+.popup-menu {
+    position: absolute;
+    padding: 1.75rem;
+    background-color: white;
+    border-radius: 6px;
+    top: 40;
+    right: 100;
+    display: none;
+    transition: all .3s ease-in;
+}
+.checkbox-container {
+    margin-bottom: .8rem;
+    accent-color: black;
+    font-weight: 400;
+}
+
+.right {
+    position: relative;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: row;
+}
+.main-header p {
+    text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header h2 {
+        margin-bottom: 1.5em;
+    }
+    .left {
+        text-align: left;
+    }
+    .main-header {
+        display: grid;
+        grid-template-columns: 40% 30% 20% auto;
+        background-color: #008AD8;
+        color: white;
+        width: 100%;
+        border-radius: 6px;
+        padding: .2em 1em;
+    }
+    .car-info {
+        display: grid;
+        grid-template-columns: 40% 30% auto;
+        align-items: center;
+
+    }
+    .icons {
+        margin: 0;
+    }
+}
